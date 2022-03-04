@@ -1,0 +1,11 @@
+package com.te.demo.bean;
+
+import java.io.Serializable;
+
+public class Admin implements Serializable{
+	private String A_userName;
+	private String A_passwordd;
+	private  String A_role;
+	private 
+
+}

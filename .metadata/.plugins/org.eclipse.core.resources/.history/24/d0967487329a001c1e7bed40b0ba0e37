@@ -1,0 +1,5 @@
+package com.te.demo.bean;
+
+public class SuperAdminReponse {
+
+}

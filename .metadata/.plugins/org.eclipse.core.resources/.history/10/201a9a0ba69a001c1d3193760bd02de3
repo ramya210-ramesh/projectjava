@@ -1,0 +1,5 @@
+package com.te.demo.service;
+
+public interface UserService {
+
+}

@@ -1,0 +1,15 @@
+package com.te.demo.bean;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.userdetails.UserDetails;
+
+public class MyAdmin implements UserDetails {
+	@Autowired
+	private AdminDetails adminDetails;
+	
+	public MyAdmin(AdminDetails adminDetails) {
+		
+		this.adminDetails = adminDetails;
+	}
+
+}

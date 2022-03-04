@@ -1,0 +1,10 @@
+package com.te.demo.service;
+
+import org.springframework.stereotype.Service;
+
+import com.te.demo.bean.CarDetails;
+
+@Service
+public interface CarService implements UserDetailsService{
+	
+}

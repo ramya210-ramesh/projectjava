@@ -1,0 +1,14 @@
+package com.te.demo.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.te.demo.dao.AdminDao;
+import com.te.demo.dao.CarDao;
+
+public class SuperAdminServiceImpl {
+	@Autowired
+	private CarDao carDao;
+	
+	private AdminDao adminDao;
+
+}

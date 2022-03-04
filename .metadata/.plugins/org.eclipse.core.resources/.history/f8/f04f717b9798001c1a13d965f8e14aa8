@@ -1,0 +1,17 @@
+package com.te.demo.model;
+
+import com.fasterxml.jackson.annotation.JsonInclude;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+@Data
+@AllArgsConstructor
+@JsonInclude
+public class AuthenticationReponse {
+	
+	private  String message;
+	private boolean error;
+	private String jwt;
+	
+}

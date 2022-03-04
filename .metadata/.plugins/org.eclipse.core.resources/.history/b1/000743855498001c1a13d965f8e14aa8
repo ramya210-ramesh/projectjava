@@ -1,0 +1,37 @@
+//package com.te.demo.configuration;
+//
+//import org.springframework.beans.factory.annotation.Autowired;
+//import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
+//import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+//import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
+//
+//import com.te.demo.service.CarServiceImpl;
+//
+//public class CarSecurityConfiguration extends WebSecurityConfigurerAdapter{
+//	
+//	@Autowired
+//	private CarServiceImpl carServiceImpl;
+//
+//	@Override
+//	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+//		auth.carServiceImpl(carServiceImpl);
+//	}
+//
+//	@Override
+//	protected void configure(HttpSecurity http) throws Exception {
+//		http.csrf().disable()
+//		.cors().disable()
+//		.authorizeRequests()
+//		.antMatchers("/admin")
+//		.hasRole("ADMIN")
+//		.antMatchers("/user")
+//		.hasAnyRole("USER", "ADMIN")
+//		.antMatchers("/")
+//		.permitAll()
+//		.and()
+//		.formLogin();
+//	}
+//	
+//	
+//
+//}

@@ -1,0 +1,18 @@
+package com.te.demo.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.te.demo.bean.CarDetails;
+import com.te.demo.dao.CarDao;
+
+public class CarServiceImpl implements CarService{
+	
+	@Autowired
+	private CarDao dao;
+
+	@Override
+	public CarDetails getDetails(int id) {
+		return dao.findByCarId(id);
+	}
+
+}

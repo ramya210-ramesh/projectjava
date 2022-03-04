@@ -1,0 +1,10 @@
+package com.te.demo.service;
+
+import com.te.demo.bean.CarDetails;
+
+public interface CarService {
+	public CarDetails getDetails(int id);
+	
+	public CarDetails addData(int id);
+
+}

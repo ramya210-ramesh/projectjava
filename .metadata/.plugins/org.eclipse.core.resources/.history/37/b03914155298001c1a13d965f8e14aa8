@@ -1,0 +1,21 @@
+package com.te.demo.bean;
+
+import com.fasterxml.jackson.annotation.JsonIncludeProperties;
+
+import lombok.Data;
+
+@Data
+@JsonIncludeProperties
+public class AdminResponse {
+	private boolean error;
+	private String message;
+	
+	public AdminResponse(boolean error,String message,String token) {
+		this.error=error;
+		this.message=message;
+		this.token=token;
+		
+	}
+	
+
+}

@@ -1,0 +1,15 @@
+package com.te.demo.dao;
+
+import org.springframework.stereotype.Repository;
+import org.springframework.data.repository.CrudRepository;
+
+
+
+@Repository
+public class AdminDao  extends CrudRepository<AdminDetails,Integer> {
+	public Admin findById(int id);
+
+	public Admin findByUsername(String username);
+	
+
+}

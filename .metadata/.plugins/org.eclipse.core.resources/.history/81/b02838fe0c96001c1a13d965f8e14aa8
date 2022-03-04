@@ -1,0 +1,12 @@
+package com.te.demo.service;
+
+import com.te.demo.bean.CarDetails;
+
+public class CarServiceImpl implements CarService{
+
+	@Override
+	public CarDetails getDetails(int id) {
+		return dao.findByCarId(id);
+	}
+
+}

@@ -1,0 +1,15 @@
+package com.te.demo.model;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+
+@Data
+@AllArgsConstructor
+public class AuthenticationReponse {
+	private final String jwt;
+	
+	
+
+	
+
+}

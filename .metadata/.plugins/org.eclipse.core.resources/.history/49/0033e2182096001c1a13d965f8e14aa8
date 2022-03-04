@@ -1,0 +1,23 @@
+package com.te.demo.bean;
+
+import java.io.Serializable;
+
+import javax.persistence.Entity;
+
+import lombok.Data;
+
+@Data
+@Entity
+public class Admin implements Serializable{
+	
+	
+	private String A_Id;
+	private String A_userName;
+	private String A_passwordd;
+	private String A_role;
+	
+	
+	private CarDetails carDetails ;
+	
+
+}
